@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlibs Game</title>
+</head>
+<body>
+    This is your madlib!
+    <br>
+    <strong>
+        There once was a person named {{ selected_person }} who really liked to eat {{ selected_color }} {{ selected_noun }}s. One day, {{ selected_person }} ate one too many {{ selected_noun }}s and felt a little         
+        {% for adj in selected_adj %}
+            {{ adj }}, 
+        {% endfor %} and ran away.
+    </strong>
+</body>
+</html>

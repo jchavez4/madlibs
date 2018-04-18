@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
 <head>
-  <title>A Compliment</title>
+  <title>Madlibs Game</title>
 </head>
 <body>
     This is your madlib!
     <br>
     <strong>
-        There once was a {{ selected_color }} {{ selected_noun }} sitting in the Hackbright Lab. When {{ selected_person }} went to pick it up, it burst into flames in a totally {{ selected_adj }} way.
+        There once was a {{ selected_color }} {{ selected_noun }} sitting in the Hackbright Lab. When {{ selected_person }} went to pick it up, it burst into flames in a totally 
+        {% for adj in selected_adj %}
+            {{ adj }}, 
+        {% endfor %} way.
     </strong>
 </body>
 </html>

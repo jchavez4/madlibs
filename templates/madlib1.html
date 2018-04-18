@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlibs Game</title>
+</head>
+<body>
+    This is your madlib!
+    <br>
+    <strong>
+        {{ selected_person }}, watch out for that {{ selected_color }} {{ selected_noun }} creeping at the bus stop!! When the 
+        {% for adj in selected_adj %}
+            {{ adj }}, 
+        {% endfor %} {{ selected_noun }}s see you, they tend to jump!!!
+    </strong>
+</body>
+</html>
